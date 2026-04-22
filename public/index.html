@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Sistema de Ventas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h1>📊 Sistema de Ventas</h1>
+
+  <!-- FORM -->
+  <div class="card">
+    <h2>Registrar venta</h2>
+    <input type="number" id="id_cliente" placeholder="ID Cliente">
+    <button onclick="guardarVenta()">Guardar</button>
+  </div>
+
+  <!-- TABLA -->
+  <div class="card">
+    <h2>Lista de ventas</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID Venta</th>
+          <th>ID Cliente</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="tablaVentas"></tbody>
+    </table>
+
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
